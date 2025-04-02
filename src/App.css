@@ -6,8 +6,9 @@ body {
   }
 
 section {
-    border: solid;
     background-color: gray;
+    border: 1px solid;
+    border-radius: 10px;
     filter: drop-shadow(black 0.25rem 0.25rem 16px);
     width: 1200px;
 }
@@ -37,7 +38,9 @@ header li {
 }
 
 .about-me-container {
-  border: solid;
+  background-color: ghostwhite;
+  border: 2px solid;
+  border-radius: 15px;
   margin: 60px auto;
 }
 
@@ -54,8 +57,27 @@ header li {
   margin: 100px auto;
 }
 
+.skills h2{
+  margin: 30px 30px;
+}
+
 .skills img {
   height: 3rem;
+  margin: auto 16px;
+}
+
+.skills-container {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  height: 75px;
+  width: 180px;
+  margin: 60px 60px;
+}
+
+.skills-container p {
+  margin: auto 0;
 }
 
 /*--- project section ---*/
