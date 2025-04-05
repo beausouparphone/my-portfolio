@@ -111,27 +111,42 @@ header li+li::before {
 }
 
 .skills h1{
-  margin: 30px 30px;
+  padding-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
-.skills img {
+.skills-container {
+  display: flex;
+  margin: auto 30px;
+}
+
+.skills-card img {
   height: 3rem;
   margin: auto 16px;
 }
 
-.skills-container {
+.skills-card {
   background-color: white;
+  border: 1px solid rgb(60, 60, 60);
   border-radius: 10px;
+  box-shadow: 2px 2px 0 rgb(60, 60, 60);
   color: black;
   display: flex;
   height: 75px;
-  width: 180px;
-  margin: 60px 60px;
+  width: 200px;
+  margin: 30px 20px;
+  transition: .3s;
 }
 
-.skills-container p {
+.skills-card p {
   margin: auto 0;
 }
+
+.skills-card:hover {
+  transform: translate(-0px, -10px);
+  filter: drop-shadow(0px 5px 5px #616161);
+} 
 
 /*--- project section ---*/
 .projects {
