@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Sulphur+Point:wght@300;400;700&display=swap');
+
+
 body {
-    font-family: Verdana , sans-serif;
+    /*font-family: "Crimson Pro", serif;*/
+    font-family: "Sulphur Point", sans-serif;
     font-size: 16px;
     margin: 0;
     background-color: #ffffff;
@@ -7,7 +11,7 @@ body {
 
 section {
     background-color: #e6e6e6;
-    border: 1px solid;
+    /*border: 1px solid;*/
     border-radius: 10px;
     filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 3px 6px);
     /*box-shadow: (2px 3px 3px black);*/
@@ -30,7 +34,7 @@ h1 {
 /*--- header ---*/
 header {
   background-color: #e6e6e6;
-  color: White;
+  color: #000;
   display: flex;
 }
 
@@ -54,6 +58,28 @@ header li {
 header li+li::before {
   content: "|";
   padding: 0 30px;
+}
+
+/*--- banner ---*/
+.banner video {
+
+}
+
+.banner p {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: 750px;
+}
+
+.banner .small {
+  font-size: 72px;
+  margin: 0;
+}
+
+.banner .large {
+  font-size: 96px;
+  margin: 0;
 }
 
 /*--- about me ---*/
