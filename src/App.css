@@ -2,14 +2,14 @@ body {
     font-family: Verdana , sans-serif;
     font-size: 16px;
     margin: 0;
-    background-color: whitesmoke;
+    background-color: #ffffff;
   }
 
 section {
-    background-color: gray;
+    background-color: #e6e6e6;
     border: 1px solid;
     border-radius: 10px;
-    filter: drop-shadow(black 1px 3px 6px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 3px 6px);
     /*box-shadow: (2px 3px 3px black);*/
     width: 1200px;
 }
@@ -29,7 +29,7 @@ h1 {
 
 /*--- header ---*/
 header {
-  background-color: gray;
+  background-color: #e6e6e6;
   color: White;
   display: flex;
 }
@@ -118,6 +118,14 @@ header li+li::before {
 
 .projects-container {
   margin: 60px auto;
+}
+
+.projects-container h2 {
+
+}
+
+.projects-container img {
+  width: 516px;
 }
 
 /*--- github section ---*/
