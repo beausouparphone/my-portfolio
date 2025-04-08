@@ -18,7 +18,7 @@ section {
     border-radius: 10px;
     filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 3px 6px);
     /*box-shadow: (2px 3px 3px black);*/
-    width: 1200px;
+    width: 66%;
 }
 
 a {
@@ -70,25 +70,30 @@ header li+li::before {
 }
 
 /*--- banner ---*/
-.banner video {
-
+video {
+  /* background-image: linear-gradient(#0000007e, #0000007e); */
+  width: 100%;
+  filter: brightness(75%);
 }
 
 .banner p {
   color: #fff;
   text-align: center;
-  position: relative;
-  bottom: 750px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: auto 0;
 }
 
 .banner .small {
   font-size: 72px;
-  margin: 0;
+  transform: translate(-50%, -300%);
 }
 
 .banner .large {
   font-size: 96px;
-  margin: 0;
+  transform: translate(-50%, -200%);
 }
 
 /*--- about me ---*/
@@ -230,6 +235,21 @@ header li+li::before {
 .github {
   margin: 100px auto;
 
-}.github h1{
+}
+
+.github h1{
   margin: 30px 30px;
+}
+
+/*--- MEDIA QUERIES ---*/
+
+@media (max-width:1024px) {
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:480px) {
+
 }
