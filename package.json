@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://beauhouatchanthara.netlify.app/",
+  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
