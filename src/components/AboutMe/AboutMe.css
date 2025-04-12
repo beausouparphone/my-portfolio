@@ -1,0 +1,23 @@
+.about-me {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  margin: 100px auto;
+}
+
+.about-me-container {
+  background-color: ghostwhite;
+  border: 2px solid;
+  border-radius: 15px;
+  margin: 60px auto;
+}
+
+.about-me-container ul {
+  list-style: none;
+}
+
+.about-me-content {
+  margin: 60px auto;
+  padding: 0 20px;
+  width: 66%;
+}

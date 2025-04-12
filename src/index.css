@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Sulphur+Point:wght@300;400;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    /*font-family: "Crimson Pro", serif;*/
+    font-family: "Sulphur Point", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+section {
+    background-color: #e6e6e6;
+    /*border: 1px solid;*/
+    border-radius: 10px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 3px 6px);
+    /*box-shadow: (2px 3px 3px black);*/
+    width: 66%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkgray;
+}
+
+h1 {
+  font-size: 36px;
+  border-bottom: 1px solid;
+}

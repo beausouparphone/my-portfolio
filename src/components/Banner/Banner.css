@@ -1,0 +1,25 @@
+video {
+  /* background-image: linear-gradient(#0000007e, #0000007e); */
+  width: 100%;
+  filter: brightness(75%);
+}
+
+.banner p {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: auto 0;
+}
+
+.banner .small {
+  font-size: 72px;
+  transform: translate(-50%, -300%);
+}
+
+.banner .large {
+  font-size: 96px;
+  transform: translate(-50%, -200%);
+}
