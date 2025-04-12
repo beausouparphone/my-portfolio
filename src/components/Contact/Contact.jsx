@@ -2,6 +2,32 @@ import React from 'react'
 import './Contact.css'
 
 const Contact = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", import.meta.env.VITE_PUBLIC_KEY);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      alert('Email sent!');
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className='contact'>
       <div className="contact-title">
@@ -13,13 +39,13 @@ const Contact = () => {
             <p>beausouparphone@gmail.com</p>
           </div>
         </div>
-        <form className="contact-right">
+        <form className="contact-right" onSubmit={onSubmit} >
           <label htmlFor=''>your name</label>
           <input type='text' placeholder='enter your name' name='name' />
           <label htmlFor=''>your email</label>
           <input type='email' placeholder='enter your email' name='email' />
           <label htmlFor=''>your message here</label>
-          <textarea type='message' rows={8} placeholder='enter your message'></textarea> 
+          <textarea name='message' rows={8} placeholder='enter your message'></textarea> 
           <button type='submit' className="contact-submit">submit now</button>
         </form>
       </div>
