@@ -1,8 +1,8 @@
 import React from 'react'
 import './Projects.css'
-import netflix_img from '../../assets/Netflix-Clone-1.PNG'
-import news_img from '../../assets/News-App-1.PNG'
-import weather_img from '../../assets/Weather-App-1.PNG'
+import netflix_img from '../../assets/Netflix-Clone-1.png'
+import news_img from '../../assets/News-App-1.png'
+import weather_img from '../../assets/Weather-App-1.png'
 
 const Projects = () => {
   return (
